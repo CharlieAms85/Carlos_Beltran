@@ -1,0 +1,39 @@
+# -*- encoding utf-8 -*-
+class puerta:
+  altura=0
+  anchura=0
+  grosor=0
+  nbisagras=0
+  estado="cerrada"
+  color="rojo"
+  def __init__(self,a,b,g,n,c):
+    self.altura=a
+    self.anchura=b
+    self.grosor=g
+    self.nbisagras=n
+    self.color=c
+  def abrir(self):
+    selfestado="abierta"
+  def cerrar(self):
+    selfestado="cerrada"
+  def muesra(self)
+    print "alto", self.altura
+    print "ancho", self.anchura
+    print "grosor", self.grosor
+    print "bisagras", self.nbisagras
+    print "color", self.color
+  def __add__(self,puerta2)
+    t=puerta(0,0,0,0,"verde")
+    t.altura=self.altura+puerta2.altura
+    t.anchura=self.anchura+puerta2.anchura
+    if(self.grosor>puerta2.grosor):
+      t.grosor=puerta2.grosor
+    else:
+      t.grosor=self.grosor
+    t.color=self.color
+    t.nbisagras=self.nbisagras+puerta2.nbisagras
+    return t
+a=puerta(10,10,5,3,"verde")
+b=puerta(10,10,2,5,"marrón")
+c=a+b
+c.muestra()
